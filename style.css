@@ -5,6 +5,7 @@
 }
 
 body {
+  font-family: "Lato", sans-serif;
   max-width: 1000px;
   margin: 0 auto;
   font-size: 13px;
@@ -23,7 +24,7 @@ body {
 
 header {
   grid-area: header;
-  background: url(assets/img/front2.jpg) no-repeat top center local;
+  background-color: black;
 }
 
 main {
@@ -59,6 +60,8 @@ footer {
   background-color: red;
   color: #fff;
   padding: 0.4em 0.8em;
+  white-space: nowrap;
+  /* cu ajutorul acestei proprietati pastrez textul din link liniar */
 }
 
 /* .header-item {
@@ -67,11 +70,20 @@ footer {
 } */
 
 .header-left {
-  width: 65%;
+  /* background-color: aqua; */
+  width: 60%;
+}
+
+.univers-img {
+  text-align: center;
+  margin-left: 2em;
+  margin-top: 2em;
+  max-width: 400px;
+  max-height: 80px;
 }
 
 .header-right {
-  width: 35%;
+  width: 40%;
 
   display: flex;
   flex-direction: column;
@@ -90,4 +102,8 @@ footer {
   align-items: center;
   gap: 0;
   margin-left: 0.4em;
+}
+
+.nav-button {
+  background-color: black;
 }

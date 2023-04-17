@@ -64,22 +64,20 @@ footer {
   /* cu ajutorul acestei proprietati pastrez textul din link liniar */
 }
 
-/* .header-item {
-  width: 50%;
-  flex: 1;
-} */
-
 .header-left {
   /* background-color: aqua; */
   width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .univers-img {
   text-align: center;
   margin-left: 2em;
-  margin-top: 2em;
-  max-width: 400px;
-  max-height: 80px;
+  margin-top: 1em;
+  width: 220px;
+  height: auto;
 }
 
 .header-right {
@@ -106,4 +104,33 @@ footer {
 
 .nav-button {
   background-color: black;
+}
+
+@media (max-width: 700px) {
+  body {
+    background-color: red;
+  }
+
+  .header-wrapper {
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+  }
+
+  body {
+    grid-template:
+      "top-text top-text" 1.5em
+      "header header" 10em
+      "main aside" auto
+      "footer footer" 10em
+      / minmax(30em, 3fr) minmax(15em, 1fr);
+    grid-column-gap: 1.5em;
+  }
+
+  .univers-img {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 0;
+    width: 220px;
+  }
 }

@@ -23,9 +23,35 @@ body {
 }
 
 .logo-text {
-  color:#fff;
+  color: #fff;
   font-weight: 900;
-  font-size: 28px;
+  font-size: 1.75em;
+  display: inline;
+}
+
+.logo-text:hover {
+  animation: myFont;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myFont {
+  0% {
+    font-size: 1.75em;
+  }
+
+  50% {
+    font-size: 3.5em;
+    color: lightblue;
+  }
+
+  0% {
+    font-size: 1.75em;
+  }
+}
+
+#sphere::first-letter {
+  font-size: 4.5em;
 }
 
 .news {
@@ -49,9 +75,9 @@ body {
   padding-right: 0.2em;
 }
 
-big {
+/* big {
   font-size: 36px;
-}
+} */
 
 header {
   grid-area: header;
@@ -105,14 +131,6 @@ footer {
   margin-left: 4em;
 }
 
-/* .univers-img {
-  text-align: center;
-  margin-left: 2em;
-  margin-top: 1em;
-  width: 100px;
-  height: auto;
-} */
-
 .header-right {
   width: 40%;
 
@@ -158,8 +176,5 @@ footer {
       "footer footer" 10em
       / minmax(30em, 3fr) minmax(15em, 1fr);
     grid-column-gap: 1.5em;
-  }
-
-
   }
 }

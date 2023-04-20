@@ -98,7 +98,7 @@ aside {
 
 footer {
   grid-area: footer;
-  background-color: blue;
+  background-color: greenyellow;
 }
 
 .header-wrapper {

@@ -1,3 +1,5 @@
+/* nota: sa nu uit sa setes hero image sa nu dispara la micsorarea ferestrei web */
+
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +19,8 @@ body {
   grid-template:
     "top-text top-text" 1.5em
     "header header" 9em
+    "slogan slogan" 8em
+    "hero hero" 20em
     "main aside" auto
     "footer footer" 10em
     / minmax(30em, 3fr) minmax(15em, 1fr);
@@ -86,6 +90,46 @@ header {
   padding-top: 0.3em;
 }
 
+.slogan {
+  grid-area: slogan;
+  background-color: rgb(22, 22, 82);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.8em;
+  padding-top: 1.4em;
+}
+
+.slogan:hover {
+  animation: myFont2;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myFont2 {
+  0% {
+    font-size: 1.8em;
+  }
+
+  50% {
+    font-size: 2.5em;
+    color: lightblue;
+  }
+
+  0% {
+    font-size: 1.8em;
+  }
+}
+
+.hero {
+  grid-area: hero;
+  background: url(assets/img/hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: local;
+}
+
 main {
   grid-area: main;
   background-color: pink;
@@ -121,6 +165,11 @@ footer {
   padding: 0.4em 0.8em;
   white-space: nowrap;
   /* cu ajutorul acestei proprietati pastrez textul din link liniar */
+}
+
+.header-nav-bar > a:hover,
+.header-nav-bar > a:focus {
+  background-color: rgb(117, 25, 25);
 }
 
 .header-left {

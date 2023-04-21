@@ -51,16 +51,12 @@ body {
 
   50% {
     font-size: 3.5em;
-    color: lightblue;
+    color: yellow;
   }
 
   0% {
     font-size: 1.75em;
   }
-}
-
-#sphere::first-letter {
-  font-size: 4.5em;
 }
 
 .news {
@@ -83,10 +79,6 @@ body {
   display: inline-block;
   padding-right: 0.2em;
 }
-
-/* big {
-  font-size: 36px;
-} */
 
 header {
   grid-area: header;
@@ -242,6 +234,7 @@ footer {
 .img-galerie {
   object-fit: cover;
   aspect-ratio: 1 / 1;
+  /* aspect-ratio: 16 / 9; */
   width: 100%;
   padding: 5em 5em 0em 5em;
 }
@@ -261,7 +254,7 @@ footer {
 }
 
 .card {
-  aspect-ratio: 1/1.2;
+  aspect-ratio: 1/1;
   box-shadow: 2px 2px 4px rgb(20, 20, 20, 0.3);
 }
 
@@ -301,9 +294,34 @@ footer {
       "header header" 15em
       "slogan slogan" 12em
       "hero hero" 20em
-      "main aside" auto
+      "main main" auto
+      "aside aside" auto
       "footer footer" 10em
       / minmax(30em, 3fr) minmax(15em, 1fr);
     grid-column-gap: 1.5em;
+    background-color: red;
+  }
+
+  .galerie-grid {
+    display: grid;
+    gap: 0.25em;
+    grid-template-columns: repeat(autofit, minmax(7rem, 0.5fr));
+  }
+
+  .slogan::after {
+    content: url(assets/img/racheta.png);
+    /* width: 30px; */
+    /* max-width: 60%;
+    height: auto; */
+    display: none;
+  }
+
+  .slogan:hover {
+    animation: none;
+  }
+
+  .slogan,
+  .p-bunvenit {
+    margin-right: 2.7em;
   }
 }

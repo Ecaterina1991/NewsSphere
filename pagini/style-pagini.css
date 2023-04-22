@@ -1,17 +1,17 @@
-
-
 /*! La sfarsit sa nu uit sa adaug link catre prima pagina cu click pe logo pe toate paginile si sa stilizez culoarea lui New cu [href="../index.html"] {
   color:lightblue;
 } 
 
 +sa sterg la sfarsit background color red de pe cel mai mic width*/
 
-
 :root {
+  --main-color-text: #312f2f;
   --blue-color: rgb(22, 22, 82);
   --font-weight-title: 900;
   --font-size-normal: 1.2em;
   --line-height-normal: 1.6em;
+  --font-size-title-nav: 1.5em;
+  --padding-main-text-navcontent: 2em;
 }
 
 * {
@@ -27,7 +27,7 @@ body {
   margin: 0 auto;
   font-size: 0.81em;
   line-height: 1.3;
-  color: #000;
+  color: var(--main-color-text);
   background-color: black;
   display: grid;
   grid-template:
@@ -51,10 +51,6 @@ body {
   animation: myFont;
   animation-duration: 5s;
   animation-iteration-count: infinite;
-}
-
-[href="../index.html"] {
-  color:lightblue;
 }
 
 @keyframes myFont {
@@ -98,7 +94,6 @@ header {
   background-color: black;
   padding-top: 0.3em;
 }
-
 
 main {
   grid-area: main;
@@ -178,14 +173,13 @@ footer {
 
 /* ///////////////////////////////// */
 
-
 .row {
   display: flex;
   justify-content: center;
   text-align: center;
 }
 
-/* ?STILIZARE MAIN */
+/* ?STILIZARE MAIN COMUNICARI*/
 .comunicari-wrapper {
   flex-direction: column;
   font-size: var(--font-size-normal);
@@ -193,8 +187,37 @@ footer {
   padding: 2em;
   margin-left: 1em;
 }
+.comunicari-wrapper > ul > li {
+  padding-bottom: 1em;
+}
 
-/* ?STILIZARE ASIDE */
+/* ?STILIZARE MAIN NEWS  */
+
+.news-wrapper {
+  padding: var(--padding-main-text-navcontent);
+  margin-left: 2em;
+  font-size: var(--font-size-normal);
+}
+
+.news-wrapper > h2 {
+  padding: 0 0 1em 0;
+  color: var(--blue-color);
+  font-weight: var(--font-weight-title);
+}
+
+.video-nasa {
+  padding: 2em;
+}
+
+.evenimente-viitoare > h3 {
+  padding-bottom: 1.5em;
+}
+
+.evenimente-viitoare > li {
+  padding: 0.5em;
+}
+
+/*?STILIZARE ASIDE */
 
 .evenimente-recente,
 .descoperiri {
@@ -250,17 +273,35 @@ footer {
 .link-footer a:hover {
   text-decoration: none;
   color: rgb(177, 177, 46);
-  color: 
   margin-left: 0.5em;
 }
 
-/* ////////////////////////// */
+/* ?START STILIZARE ULTIMELE STIRI */
+
+.ultimele-stiri-wrapper {
+  padding: var(--padding-main-text-navcontent);
+  color: var(--main-color-text);
+  font-size: var(--font-size-normal);
+}
+
+.ultimele-stiri-wrapper > h2 {
+  font-size: 1.5em;
+}
+.ultimele-stiri-wrapper > div {
+  padding: 1em;
+}
+.ultimele-stiri-wrapper > div > h3 {
+  padding-bottom: 0.7em;
+  padding-top: 0.3em;
+}
+
+.data-ultimile-stiri {
+  font-style: oblique;
+}
+
+/* ?END STILIZARE ULTIMELE STIRI */
 
 @media (max-width: 700px) {
-  body {
-    background-color: red;
-  }
-
   .header-wrapper {
     justify-content: center;
     flex-direction: column;
@@ -271,14 +312,11 @@ footer {
     grid-template:
       "top-text top-text" 1.5em
       "header header" 15em
-      "slogan slogan" 12em
-      "hero hero" 20em
       "main main" auto
       "aside aside" auto
       "footer footer" 15em
-      / minmax(30em, 3fr) minmax(15em, 1fr);
+      / minmax(20em, 1fr) minmax(15em, 1fr);
     grid-column-gap: 1.5em;
-    background-color: red;
   }
 
   .galerie-grid {

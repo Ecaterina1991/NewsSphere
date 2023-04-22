@@ -1,7 +1,12 @@
 /* nota: sa nu uit sa setes hero image sa nu dispara la micsorarea ferestrei web */
+
+
 :root {
+  --main-color-text: #312f2f;
   --blue-color: rgb(22, 22, 82);
   --font-weight-title: 900;
+  --font-size-normal: 1.2em;
+  --line-height-normal: 1.6em;
 }
 
 * {
@@ -17,7 +22,7 @@ body {
   margin: 0 auto;
   font-size: 0.81em;
   line-height: 1.3;
-  color: #000;
+  color: var(--main-color-text);
   background-color: black;
   display: grid;
   grid-template:
@@ -220,7 +225,7 @@ footer {
   color: orangered;
 }
 
-/*?Editare Galerie subsolul paginii */
+/*?Editare main prima pagina*/
 
 .suprapuse {
   display: grid;
@@ -282,6 +287,7 @@ footer {
 
 .p-bunvenit p {
  text-indent: 1.25em;
+ padding-bottom: 0.3em;
 }
 
 .row {
@@ -395,9 +401,6 @@ footer {
 
   .slogan::after {
     content: url(assets/img/racheta.png);
-    /* width: 30px; */
-    /* max-width: 60%;
-    height: auto; */
     display: none;
   }
 

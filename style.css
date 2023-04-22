@@ -100,9 +100,6 @@ header {
 
 .slogan::after {
   content: url(assets/img/racheta.png);
-  /* width: 30px; */
-  /* max-width: 60%;
-  height: auto; */
 }
 
 .slogan:hover {
@@ -211,6 +208,18 @@ footer {
   background-color: black;
 }
 
+.content > a {
+  text-decoration: none;
+  color: var(--blue-color);
+  font-size: x-large;
+  font-weight: bold;
+  margin-left: 1.5em;
+}
+
+.content > a:hover {
+  color: orangered;
+}
+
 /*?Editare Galerie subsolul paginii */
 
 .suprapuse {
@@ -230,6 +239,11 @@ footer {
 
 .card {
   aspect-ratio: 1 / 1.5;
+}
+
+.data-card {
+  padding: 1em 0 1em 1.5em;
+  color: rgb(88, 83, 83);
 }
 
 .img-galerie {
@@ -264,6 +278,10 @@ footer {
 .p-bunvenit {
   font-size: 1.4em;
   padding: 2em;
+}
+
+.p-bunvenit p {
+ text-indent: 1.25em;
 }
 
 .row {
@@ -347,9 +365,7 @@ footer {
 /* ////////////////////////// */
 
 @media (max-width: 700px) {
-  body {
-    background-color: red;
-  }
+ 
 
   .header-wrapper {
     justify-content: center;
@@ -366,9 +382,9 @@ footer {
       "main main" auto
       "aside aside" auto
       "footer footer" 15em
-      / minmax(30em, 3fr) minmax(15em, 1fr);
+      / minmax(20em, 1fr) minmax(15em, 1fr);
     grid-column-gap: 1.5em;
-    background-color: red;
+    /* background-color: red; */
   }
 
   .galerie-grid {
@@ -389,10 +405,11 @@ footer {
     animation: none;
   }
 
-  .slogan,
-  .p-bunvenit {
-    margin-right: 2.7em;
+  .descoperiri {
+    margin-bottom: 1em;
   }
+
+
 
   .link-footer {
     display: block;

@@ -1,6 +1,5 @@
 /* nota: sa nu uit sa setes hero image sa nu dispara la micsorarea ferestrei web */
 
-
 :root {
   --main-color-text: #312f2f;
   --blue-color: rgb(22, 22, 82);
@@ -286,8 +285,8 @@ footer {
 }
 
 .p-bunvenit p {
- text-indent: 1.25em;
- padding-bottom: 0.3em;
+  text-indent: 1.25em;
+  padding-bottom: 0.3em;
 }
 
 .row {
@@ -364,15 +363,42 @@ footer {
 .link-footer a:hover {
   text-decoration: none;
   color: rgb(177, 177, 46);
-  color: 
   margin-left: 0.5em;
+}
+
+.copyright > p {
+  color: lightgray;
+  font-size: 0.7em;
+  padding: 2em;
+}
+
+#phpacademy {
+  display: inline-block;
+}
+
+#phpacademy:hover {
+  color: orangered;
+  font-weight: 800;
+  animation-name: myFont3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myFont3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5) translateX(10px);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 /* ////////////////////////// */
 
 @media (max-width: 700px) {
- 
-
   .header-wrapper {
     justify-content: center;
     flex-direction: column;
@@ -411,8 +437,6 @@ footer {
   .descoperiri {
     margin-bottom: 1em;
   }
-
-
 
   .link-footer {
     display: block;

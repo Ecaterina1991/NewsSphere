@@ -6,6 +6,7 @@
 
 :root {
   --main-color-text: #312f2f;
+  --orangered-color: orangered;
   --blue-color: rgb(22, 22, 82);
   --font-weight-title: 900;
   --font-size-normal: 1.2em;
@@ -179,7 +180,14 @@ footer {
   text-align: center;
 }
 
-/* ?STILIZARE MAIN COMUNICARI*/
+/* ?STILIZARE COMUNICATE MAIN*/
+
+.comunicari-title {
+  font-size: var(--font-size-title-nav);
+  font-weight: var(--font-weight-title);
+  color: var(--blue-color);
+}
+
 .comunicari-wrapper {
   flex-direction: column;
   font-size: var(--font-size-normal);
@@ -187,11 +195,28 @@ footer {
   padding: 2em;
   margin-left: 1em;
 }
+
 .comunicari-wrapper > ul > li {
   padding-bottom: 1em;
+  list-style-type: none;
 }
 
-/* ?STILIZARE MAIN NEWS  */
+.comunicari-wrapper > ul > li::before {
+  content: "";
+  padding-bottom: 1em;
+  display: inline-block;
+  width: 1.88em;
+  height: 1.88em;
+  background: url("../assets/img/bifa.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 30%;
+  transform: translateY(50%);
+  margin-right: 10px;
+}
+
+/* ?STILIZARE NEWS MAIN  */
 
 .news-wrapper {
   padding: var(--padding-main-text-navcontent);
@@ -215,6 +240,224 @@ footer {
 
 .evenimente-viitoare > li {
   padding: 0.5em;
+}
+
+/* ?START STILIZARE ULTIMELE STIRI */
+
+.ultimele-stiri-wrapper {
+  padding: var(--padding-main-text-navcontent);
+  color: var(--main-color-text);
+  font-size: var(--font-size-normal);
+}
+
+.ultimele-stiri-wrapper > h2 {
+  color: var(--blue-color);
+  font-weight: var(--font-weight-title);
+  font-size: 1.5em;
+  padding-bottom: 1.5em;
+}
+.ultimele-stiri-wrapper > div {
+  padding: 1em;
+}
+.ultimele-stiri-wrapper > div > h3 {
+  padding-bottom: 0.7em;
+  padding-top: 0.3em;
+}
+
+.data-ultimile-stiri {
+  font-style: oblique;
+}
+
+/*?STILIZARE FOTO */
+
+.title-galerie {
+  font-size: var(--font-size-title-nav);
+  font-weight: var(--font-weight-title);
+  color: var(--blue-color);
+  padding: 2em;
+}
+
+.title-galerie:hover {
+  color: var(--orangered-color);
+  animation-name: bigger-font;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes bigger-font {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.grid-container > .grid-item > p {
+  display: inline-block;
+  color: lightgray;
+  margin-left: calc(200px - 90%);
+  padding-top: 0.1em;
+  font-weight: bold;
+}
+
+.grid-container > .item9 > p {
+  margin-left: calc(200px - 65%);
+}
+
+.grid-container {
+  display: grid;
+  height: auto;
+  padding-left: 5.5em;
+  padding-top: 2em;
+  gap: 0.3em;
+  grid-template-columns: repeat(3, minmax(15rem, 1fr));
+  grid-auto-rows: 20rem;
+}
+
+.grid-item {
+  border: 10px solid rgba(3, 3, 88, 0.527);
+  border-radius: 5px;
+}
+
+.grid-item:hover {
+  animation: image-bigger;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes image-bigger {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.3);
+  }
+
+  0% {
+    transform: scale(1);
+  }
+}
+
+.item1 {
+  background: url(../assets/img/galerie/galerie2/img1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+
+.item2 {
+  background: url(../assets/img/galerie/galerie2/img2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+.item3 {
+  background: url(../assets/img/galerie/galerie2/img3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+
+.item5 {
+  background: url(../assets/img/galerie/galerie2/img5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+.item6 {
+  background: url(../assets/img/galerie/galerie2/img6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+.item7 {
+  background: url(../assets/img/galerie/galerie2/img7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+.item8 {
+  background: url(../assets/img/galerie/galerie2/img8.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+.item9 {
+  background: url(../assets/img/galerie/galerie2/img9.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+.item10 {
+  background: url(../assets/img/galerie/galerie2/img10.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+.item11 {
+  background: url(../assets/img/galerie/galerie2/img11.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+
+.item12 {
+  background: url(../assets/img/galerie/galerie2/img12.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+.item14 {
+  background: url(../assets/img/galerie/galerie2/img14.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 200px;
+  height: 200px;
+}
+.item15 {
+  background: url(../assets/img/galerie/galerie2/img15.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 200px;
+  height: 200px;
+}
+
+/* ?STILIZARE MEDIA QUERIES PENTRU GALERIA FOTO */
+
+@media (max-width: 1048px) {
+  .grid-container {
+    padding-left: 2.5em;
+
+    grid-template-columns: repeat(2, minmax(15rem, 1fr));
+    grid-auto-rows: 20rem;
+  }
+}
+@media (max-width: 504px) {
+  .grid-container {
+    padding-left: 11em;
+
+    grid-template-columns: repeat(1, minmax(15rem, 1fr));
+    grid-auto-rows: 20rem;
+  }
 }
 
 /*?STILIZARE ASIDE */
@@ -276,30 +519,7 @@ footer {
   margin-left: 0.5em;
 }
 
-/* ?START STILIZARE ULTIMELE STIRI */
-
-.ultimele-stiri-wrapper {
-  padding: var(--padding-main-text-navcontent);
-  color: var(--main-color-text);
-  font-size: var(--font-size-normal);
-}
-
-.ultimele-stiri-wrapper > h2 {
-  font-size: 1.5em;
-}
-.ultimele-stiri-wrapper > div {
-  padding: 1em;
-}
-.ultimele-stiri-wrapper > div > h3 {
-  padding-bottom: 0.7em;
-  padding-top: 0.3em;
-}
-
-.data-ultimile-stiri {
-  font-style: oblique;
-}
-
-/* ?END STILIZARE ULTIMELE STIRI */
+/* ?MEDIA QUERIES EDIT */
 
 @media (max-width: 700px) {
   .header-wrapper {
@@ -345,5 +565,9 @@ footer {
   .link-footer {
     display: block;
     margin-left: 0.5em;
+  }
+
+  .video-nasa > iframe {
+    width: 350px;
   }
 }

@@ -116,7 +116,7 @@ footer {
   background-color: black;
 }
 
-/*?MAIN ///////////////// */
+/*?MAIN */
 
 .data-card {
   padding: 2em 0 0em 1.5em;
@@ -157,8 +157,18 @@ text-indent: 1.25em;
 padding-bottom: 0.7em;
 }
 
+#link-foto {
+  text-decoration: none;
+  color: var(--blue-color);
+}
 
-/* ?END MAin/////////// */
+#link-foto:hover {
+  text-decoration: none;
+  color: orangered;
+}
+
+
+/* ?END MAin*/
 
 .header-wrapper {
   display: flex;

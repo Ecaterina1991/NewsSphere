@@ -10,6 +10,8 @@
 :root {
   --blue-color: rgb(22, 22, 82);
   --font-weight-title: 900;
+  --font-size-normal: 1.2em;
+  --line-height-normal: 1.6em;
 }
 
 * {
@@ -181,6 +183,15 @@ footer {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+/* ?STILIZARE MAIN */
+.comunicari-wrapper {
+  flex-direction: column;
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
+  padding: 2em;
+  margin-left: 1em;
 }
 
 /* ?STILIZARE ASIDE */

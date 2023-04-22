@@ -180,7 +180,27 @@ footer {
   text-align: center;
 }
 
-/* ?STILIZARE COMUNICATE MAIN*/
+/* ?STILIZARE PRIVACY MAIN */
+
+.privacy-wrapper {
+  padding: var(--padding-main-text-navcontent);
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
+  margin-bottom: 2em;
+}
+
+.privacy-wrapper > h2 {
+  font-size: var(--font-size-title-nav);
+  font-weight: var(--font-weight-title);
+  color: var(--blue-color);
+  padding: var(--padding-main-text-navcontent);
+}
+
+.privacy-wrapper div > h3 {
+  padding: 0.7em 0;
+}
+
+/*?STILIZARE COMUNICATE MAIN*/
 
 .comunicari-title {
   font-size: var(--font-size-title-nav);

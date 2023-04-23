@@ -1,7 +1,7 @@
 /*! La sfarsit sa nu uit sa adaug link catre prima pagina cu click pe logo pe toate paginile si sa stilizez culoarea lui New cu [href="../index.html"] {
   color:lightblue;
 } 
-
++daca am timp sa creez si sa incarc 8 rapoarte financiare fictive html
 +sa sterg la sfarsit background color red de pe cel mai mic width*/
 
 :root {
@@ -193,11 +193,59 @@ footer {
   font-size: var(--font-size-title-nav);
   font-weight: var(--font-weight-title);
   color: var(--blue-color);
-  padding: var(--padding-main-text-navcontent);
+  padding-bottom: var(--padding-main-text-navcontent);
 }
 
 .privacy-wrapper div > h3 {
   padding: 0.7em 0;
+}
+
+.privacy-wrapper > div > p {
+  text-indent: 15px;
+}
+
+/*?STILIZARE ACCESIBILITATE MAIN */
+
+.accesibilitate-wrapper {
+  padding: var(--padding-main-text-navcontent);
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
+}
+
+.accesibilitate-wrapper > h2 {
+  padding-bottom: 1.5em;
+  font-size: var(--font-size-title-nav);
+  font-weight: var(--font-weight-title);
+  color: var(--blue-color);
+}
+
+.accesibilitate-wrapper > div > p {
+  text-indent: 2em;
+  padding-bottom: 0.5em;
+}
+
+.accesibilitate-wrapper > div > p:last-child {
+  font-style: italic;
+}
+
+/*?STILIZARE AGENTIE RAPOARTE MAIN  */
+
+.financiar-wrapper {
+  padding: var(--padding-main-text-navcontent);
+  font-size: var(--font-size-normal);
+  line-height: 2.5em;
+}
+
+.financiar-wrapper > h2 {
+  padding-bottom: 1.5em;
+  font-size: var(--font-size-title-nav);
+  font-weight: var(--font-weight-title);
+  color: var(--blue-color);
+}
+
+.financiar-wrapper > div > p {
+  text-indent: 2em;
+  padding-bottom: 0.5em;
 }
 
 /*?STILIZARE COMUNICATE MAIN*/

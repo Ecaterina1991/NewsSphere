@@ -19,10 +19,10 @@
       <div class="header-wrapper flex-2-col">
         <div class="header-item header-left">
           <p class="logo-text">
-            <a href="../index.html"><span class="news">News</span></a>
-            <!-- <span class="news">News</span>--><span id="sphere"
-              >Sphere.</span
-            ><span class="ro">ro</span>
+            <a href="../index.html"
+              ><span class="news">News</span> <span id="sphere">Sphere.</span
+              ><span class="ro">ro</span></a
+            >
           </p>
         </div>
 
@@ -52,8 +52,77 @@
     </header>
 
     <main>
-      <div>
-        <h2>Contact NewsSphere</h2>
+      <div class="contact-wrapper">
+        <h2 class="row">Contact NewsSphere</h2>
+
+        <form class="form-contact row" action="#" method="POST">
+          <fieldset>
+            <legend class="legend">Informații de contact</legend>
+
+            <div class="form-grup">
+              <label for="nume">Nume:</label> <br />
+              <input
+                type="text"
+                name="nume"
+                id="nume"
+                placeholder="Introduceti numele"
+                required
+              />
+            </div>
+
+            <div class="form-grup">
+              <label for="prenume">Prenume:</label><br />
+              <input
+                type="text"
+                name="prenume"
+                id="prenume"
+                placeholder="Introduceti prenumele"
+                required
+              />
+            </div>
+
+            <div class="form-grup">
+              <label for="email">Email:</label> <br />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Introduceti emailul"
+                required
+              />
+            </div>
+
+            <div class="form-grup">
+              <label for="optiuni">Opțiuni de alegere:</label> <br />
+              <select name="optiuni" id="optiuni-select">
+                <option value="">Opțiuni de alegere</option>
+                <option value="sugestii">Sugestii</option>
+                <option value="intrebari">Întrebări</option>
+                <option value="feedback">Feedback</option>
+              </select>
+            </div>
+
+            <div class="form-grup">
+              <label for="text">Mesaj:</label> <br />
+              <textarea name="text" id="text" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="form-grup">
+              <input
+                type="checkbox"
+                id="termeni-conditii"
+                name="termeni-conditii"
+              />
+              <label for="termeni-conditii"
+                >Am citit și sunt de acord cu termenii și condițiile.</label
+              >
+            </div>
+
+            <div class="form-grup">
+              <button type="submit">Trimite</button>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
     <aside>
@@ -79,37 +148,6 @@
             <li>
               Tue., Apr. 25, 5:15 p.m. EDT: Coverage of Russian Spacewalk 57 at
               the International Space Station
-            </li>
-          </ul>
-        </div>
-
-        <div class="descoperiri">
-          <h2 class="aside-title">
-            Cele mai recente și mai interesante descoperiri și evenimente din
-            lumea spațiului și a explorării
-          </h2>
-          <ul>
-            <li>
-              Lansări recente ale rachetelor spațiale: Descoperiți cele mai noi
-              și mai avansate rachete spațiale lansate de NASA și partenerii
-              săi, precum și misiunile lor unice și interesante.
-            </li>
-            <li>
-              Noi descoperiri din planeta Marte și din alte părți ale sistemului
-              solar: Descoperiți cele mai recente descoperiri științifice din
-              lumea spațiului, precum și descoperiri fascinante despre planeta
-              Marte și alte corpuri cerești din sistemul nostru solar.
-            </li>
-            <li>
-              Progrese în dezvoltarea tehnologiei de zbor: Aflați despre cele
-              mai recente inovații și tehnologii în dezvoltarea și îmbunătățirea
-              rachetelor spațiale și a altor tehnologii de zbor.
-            </li>
-            <li>
-              Evenimente importante care urmează să aibă loc: Fiți la curent cu
-              evenimente importante din lumea spațiului, cum ar fi eclipse
-              solare sau comete care urmează să treacă pe lângă Pământ și aflați
-              ce trebuie să știți pentru a le observa în siguranță.
             </li>
           </ul>
         </div>

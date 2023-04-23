@@ -6,6 +6,7 @@
   --font-weight-title: 900;
   --font-size-normal: 1.2em;
   --line-height-normal: 1.6em;
+  --logo-text-color: lightblue;
 }
 
 * {
@@ -34,6 +35,11 @@ body {
     / minmax(30em, 3fr) minmax(15em, 1fr);
   grid-column-gap: 1.5em;
   grid-row-gap: 1.5em;
+}
+
+[href="../index.html"] {
+  color: lightblue;
+  text-decoration: none;
 }
 
 .logo-text {
@@ -66,7 +72,8 @@ body {
 
 .news {
   display: inline-block;
-  background-color: rgb(67, 39, 80);
+  background-color: var(--blue-color);
+  color: lightblue;
   border: 5px solid yellow;
   padding: 0.4em;
   width: 100px;

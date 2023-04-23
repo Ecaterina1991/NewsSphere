@@ -7,12 +7,14 @@
 :root {
   --main-color-text: #312f2f;
   --orangered-color: orangered;
-  --blue-color: rgb(22, 22, 82);
+  --blue-color: #161652;
   --font-weight-title: 900;
   --font-size-normal: 1.2em;
   --line-height-normal: 1.6em;
   --font-size-title-nav: 1.5em;
   --padding-main-text-navcontent: 2em;
+  --nuanta-deschisa-albastru: #afb4ca;
+  --logo-text-color: lightblue;
 }
 
 * {
@@ -39,6 +41,11 @@ body {
     / minmax(30em, 3fr) minmax(15em, 1fr);
   grid-column-gap: 1.5em;
   grid-row-gap: 1.5em;
+}
+
+[href="../index.html"] {
+  color: lightblue;
+  text-decoration: none;
 }
 
 .logo-text {
@@ -71,7 +78,8 @@ body {
 
 .news {
   display: inline-block;
-  background-color: rgb(67, 39, 80);
+  background-color: var(--blue-color);
+  color: var(--logo-text-color);
   border: 5px solid yellow;
   padding: 0.4em;
   width: 100px;
@@ -79,7 +87,6 @@ body {
   border-radius: 50%;
   vertical-align: bottom;
   font-size: 36px;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.521);
   text-decoration: solid;
   margin-right: -1em;
 }
@@ -248,6 +255,120 @@ footer {
   padding-bottom: 0.5em;
 }
 
+/*?STILIZARE BIROU MAIN */
+
+.birou-wrapper {
+  padding: var(--padding-main-text-navcontent);
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
+}
+
+.birou-wrapper > h2 {
+  font-size: var(--font-size-title-nav);
+  font-weight: var(--font-weight-title);
+  color: var(--blue-color);
+  padding-bottom: 1.7em;
+  padding-top: 0.7em;
+}
+
+.birou-wrapper > div > p {
+  text-indent: 2em;
+}
+
+.birou-wrapper > div > p:first-child {
+  padding-bottom: 3.2em;
+}
+
+.birou-wrapper div > ul > li {
+  padding-bottom: 1em;
+  list-style-type: none;
+}
+
+.birou-wrapper div > ul > li::before {
+  content: "";
+  display: inline-block;
+  background: url(../assets/img/bifa.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1.88em;
+  height: 1.88em;
+  position: relative;
+  top: 30%;
+  transform: translateY(35%);
+  margin-right: 10px;
+}
+
+/* ?STILIZARE CONTACT MAIN*/
+
+.contact-wrapper > h2 {
+  font-size: var(--font-size-title-nav);
+  font-weight: var(--font-weight-title);
+  color: var(--blue-color);
+  padding-bottom: 1em;
+  padding-top: 0.7em;
+}
+
+.form-contact {
+  width: 100%;
+  padding: 2em;
+  font-size: var(--font-size-normal);
+  color: var(--blue-color);
+  font-weight: 600;
+}
+
+.form-grup {
+  padding: 0.5em;
+}
+
+.form-grup:nth-child(7) {
+  padding: 0 3em;
+}
+
+.legend {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+fieldset {
+  background-color: #afb4ca;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+}
+
+input,
+textarea,
+select {
+  padding: 0.5em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+  color: gray;
+}
+
+input:hover,
+textarea:hover {
+  background-color: var(--blue-color);
+  color: #fff;
+}
+
+.form-grup > button {
+  background-color: var(--orangered-color);
+  color: #fff;
+  padding: 0.7em;
+  margin-bottom: 1em 0;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
+}
+
+.form-grup > button:hover {
+  background-color: var(--blue-color);
+}
+
+.form-grup > button:visited {
+  background-color: rgb(5, 5, 24);
+}
+
 /*?STILIZARE COMUNICATE MAIN*/
 
 .comunicari-title {
@@ -260,6 +381,7 @@ footer {
   flex-direction: column;
   font-size: var(--font-size-normal);
   line-height: var(--line-height-normal);
+
   padding: 2em;
   margin-left: 1em;
 }
@@ -310,7 +432,7 @@ footer {
   padding: 0.5em;
 }
 
-/* ?START STILIZARE ULTIMELE STIRI */
+/* ?STILIZARE ULTIMELE STIRI */
 
 .ultimele-stiri-wrapper {
   padding: var(--padding-main-text-navcontent);

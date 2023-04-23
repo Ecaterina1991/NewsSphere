@@ -60,6 +60,7 @@ body {
 
 [href="../index.html"] {
   color:lightblue;
+  text-decoration: none;
 }
 
 @keyframes myFont {

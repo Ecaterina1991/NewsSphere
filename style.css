@@ -349,6 +349,10 @@ ul li:first-child {
   color: yellow;
 }
 
+.aside-wrapper > .evenimente-recente > a {
+  text-decoration: none;
+}
+
 .aside-title:hover {
   color: orangered;
 }

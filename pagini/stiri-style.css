@@ -32,7 +32,7 @@ body {
   margin: 0 auto;
   font-size: 0.81em;
   line-height: 1.3;
-  color: #000;
+  color: var(--blue-color);
   background-color: black;
   display: grid;
   grid-template:
@@ -152,7 +152,7 @@ padding: 1em 1em 0 3em;
 .text-stiri {
   font-size: 1.4em;
   line-height: 1.6em;
-  padding: 0 2em 3em 2em;
+  padding: 2em 2em 3em 2em;
 }
 
 .text-stiri p {
@@ -236,7 +236,6 @@ padding-bottom: 0.7em;
 
 /* ///////////////////////////////// */
 
-
 .row {
   display: flex;
   justify-content: center;
@@ -291,6 +290,12 @@ footer {
   animation-name: myFont3;
   animation-duration: 5s;
   animation-iteration-count: infinite;
+}
+
+/* ?Altele */
+
+.ol-lansari {
+margin-left: 3em;
 }
 
 @keyframes myFont3 {

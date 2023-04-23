@@ -80,7 +80,7 @@ body {
 
 .news {
   display: inline-block;
-  background-color: rgb(67, 39, 80);
+  background-color: var(--blue-color);
   border: 5px solid yellow;
   border-color: yellow red red yellow;
   padding: 0.4em;
@@ -275,12 +275,40 @@ footer {
   margin-left: 0.5em;
 }
 
+.copyright > p {
+  color: lightgray;
+  font-size: 0.7em;
+  padding: 2em;
+}
+
+#phpacademy {
+  display: inline-block;
+}
+
+#phpacademy:hover {
+  color: orangered;
+  font-weight: 800;
+  animation-name: myFont3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myFont3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5) translateX(10px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* ////////////////////////// */
 
 @media (max-width: 700px) {
-  body {
-    background-color: red;
-  }
+ 
 
   .header-wrapper {
     justify-content: center;
@@ -294,13 +322,24 @@ footer {
       "header header" 17em
       "main main" auto
       "footer footer" 15em
-      / minmax(30em, 3fr) minmax(15em, 1fr);
+      / minmax(20em, 3fr) minmax(15em, 1fr);
     grid-column-gap: 1.5em;
-    background-color: red;
   }
 
   .link-footer {
-    display: block;
-    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link-footer a {
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 6em;
+  }
+
+  .link-footer a:hover {
+    text-decoration: none;
+    color: rgb(177, 177, 46);
+    margin-left: 6em;
   }
 }

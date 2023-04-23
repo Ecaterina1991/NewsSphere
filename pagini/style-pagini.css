@@ -711,6 +711,36 @@ footer {
   margin-left: 0.5em;
 }
 
+.copyright > p {
+  color: lightgray;
+  font-size: 0.7em;
+  padding: 2em;
+}
+
+#phpacademy {
+  display: inline-block;
+}
+
+#phpacademy:hover {
+  color: orangered;
+  font-weight: 800;
+  animation-name: myFont3;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes myFont3 {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5) translateX(10px);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 /* ?MEDIA QUERIES EDIT */
 
 @media (max-width: 700px) {
@@ -758,5 +788,22 @@ footer {
 
   .video-nasa > iframe {
     width: 350px;
+  }
+
+  .link-footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link-footer a {
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 6em;
+  }
+
+  .link-footer a:hover {
+    text-decoration: none;
+    color: rgb(177, 177, 46);
+    margin-left: 6em;
   }
 }

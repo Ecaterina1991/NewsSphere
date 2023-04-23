@@ -454,7 +454,19 @@ footer {
   }
 
   .link-footer {
-    display: block;
-    margin-left: 0.5em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link-footer a {
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 6em;
+  }
+
+  .link-footer a:hover {
+    text-decoration: none;
+    color: rgb(177, 177, 46);
+    margin-left: 6em;
   }
 }

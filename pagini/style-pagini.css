@@ -1,5 +1,4 @@
-/*! La sfarsit sa nu uit sa adaug link catre prima pagina cu click pe logo pe toate paginile si sa stilizez culoarea lui New cu [href="../index.html"] {
-  color:lightblue;
+/*! 
 } 
 +daca am timp sa creez si sa incarc 8 rapoarte financiare fictive html
 +sa sterg la sfarsit background color red de pe cel mai mic width*/
@@ -81,6 +80,7 @@ body {
   background-color: var(--blue-color);
   color: var(--logo-text-color);
   border: 5px solid yellow;
+  border-color: yellow red red yellow;
   padding: 0.4em;
   width: 100px;
   height: 100px;
@@ -95,6 +95,7 @@ body {
   background-color: red;
   display: inline-block;
   padding-right: 0.2em;
+  color: black;
 }
 
 header {
@@ -134,7 +135,7 @@ footer {
 .header-nav-bar > a {
   text-decoration: none;
   background-color: red;
-  color: white;
+  color: black;
   padding: 0.4em 0.8em;
   white-space: nowrap;
   /* cu ajutorul acestei proprietati pastrez textul din link liniar */
@@ -143,6 +144,7 @@ footer {
 .header-nav-bar > a:hover,
 .header-nav-bar > a:focus {
   background-color: rgb(117, 25, 25);
+  color: beige;
 }
 
 .header-left {
@@ -164,7 +166,7 @@ footer {
 
 .input-search {
   width: 14.69em;
-  padding: 0.3em;
+  padding: 0.4em;
 }
 
 .search-bar {
@@ -737,9 +739,6 @@ footer {
 
   .slogan::after {
     content: url(assets/img/racheta.png);
-    /* width: 30px; */
-    /* max-width: 60%;
-    height: auto; */
     display: none;
   }
 

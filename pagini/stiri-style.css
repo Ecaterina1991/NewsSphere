@@ -82,6 +82,7 @@ body {
   display: inline-block;
   background-color: rgb(67, 39, 80);
   border: 5px solid yellow;
+  border-color: yellow red red yellow;
   padding: 0.4em;
   width: 100px;
   height: 100px;
@@ -97,6 +98,7 @@ body {
   background-color: red;
   display: inline-block;
   padding-right: 0.2em;
+  color: black;
 }
 
 header {
@@ -169,7 +171,7 @@ padding-bottom: 0.7em;
 }
 
 
-/* ?END MAin*/
+/* END MAin*/
 
 .header-wrapper {
   display: flex;
@@ -187,7 +189,7 @@ padding-bottom: 0.7em;
 .header-nav-bar > a {
   text-decoration: none;
   background-color: red;
-  color: white;
+  color: black;
   padding: 0.4em 0.8em;
   white-space: nowrap;
   /* cu ajutorul acestei proprietati pastrez textul din link liniar */
@@ -196,10 +198,10 @@ padding-bottom: 0.7em;
 .header-nav-bar > a:hover,
 .header-nav-bar > a:focus {
   background-color: rgb(117, 25, 25);
+  color: beige;
 }
 
 .header-left {
-  /* background-color: aqua; */
   width: 50%;
   display: flex;
   justify-content: flex-start;
@@ -217,7 +219,7 @@ padding-bottom: 0.7em;
 
 .input-search {
   width: 18.69em;
-  padding: 0.3em;
+  padding: 0.4em;
 }
 
 .search-bar {

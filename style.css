@@ -382,7 +382,6 @@ ul li:first-child {
 
 .live {
   font-weight: 900;
-  color: rgb(156, 32, 32);
 }
 
 .cercetatori-wrapper {
@@ -442,7 +441,7 @@ footer {
 
 .link-footer a:hover {
   text-decoration: none;
-  color: rgb(177, 177, 46);
+  color: #b1b12e;
   margin-left: 0.5em;
 }
 
@@ -530,7 +529,7 @@ footer {
 
   .link-footer a:hover {
     text-decoration: none;
-    color: rgb(177, 177, 46);
+    color: #b1b12e;
     margin-left: 6em;
   }
 }

@@ -47,11 +47,6 @@ a[href] {
   text-decoration: none;
 }
 
-/* [href="../index.html"] {
-  color: lightblue;
-  text-decoration: none;
-} */
-
 .logo-text {
   color: lightblue;
   font-weight: 900;
@@ -354,8 +349,8 @@ select {
 
 input:hover,
 textarea:hover {
-  background-color: var(--blue-color);
-  color: #fff;
+  background-color: yellow;
+  color: var(--blue-color);
 }
 
 .form-grup > button {
@@ -382,6 +377,7 @@ textarea:hover {
   font-size: var(--font-size-title-nav);
   font-weight: var(--font-weight-title);
   color: var(--blue-color);
+  margin-bottom: 3em;
 }
 
 .comunicari-wrapper {
@@ -463,6 +459,11 @@ textarea:hover {
 
 .data-ultimile-stiri {
   font-style: oblique;
+}
+
+.img-ultimele-stiri {
+  width: 100%;
+  max-height: 400px;
 }
 
 /*?STILIZARE FOTO */

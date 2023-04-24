@@ -35,10 +35,15 @@ body {
   grid-row-gap: 1.5em;
 }
 
-[href="../index.html"] {
+a[href] {
   color: lightblue;
   text-decoration: none;
 }
+
+/* [href="../index.html"] {
+  color: lightblue;
+  text-decoration: none;
+} */
 
 .logo-text {
   color: lightblue;

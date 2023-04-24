@@ -1,6 +1,7 @@
 
 
-/*! sa fac conexiunea la linkuri de pe aside pe toate paginile.
+/*! accesare navigatie footer din pagina stiri din navigatia top (mai putin din evenimente aside)
+sa fac conexiunea la linkuri de pe aside pe toate paginile.
 + sa schimb peste tot lang=ro
 
 sa adaug 3 matadate in head
@@ -51,8 +52,13 @@ body {
   animation-iteration-count: infinite;
 }
 
-[href="../index.html"] {
+/* [href="../index.html"] {
   color:lightblue;
+  text-decoration: none;
+} */
+
+a[href] {
+  color: lightblue;
   text-decoration: none;
 }
 
@@ -113,6 +119,10 @@ footer {
 }
 
 /*?MAIN */
+
+.video-nasa {
+  padding: 2em;
+}
 
 .data-card {
   padding: 2em 0 0em 1.5em;
@@ -339,5 +349,9 @@ margin-left: 3em;
     text-decoration: none;
     color: rgb(177, 177, 46);
     margin-left: 6em;
+  }
+
+  .video-nasa > iframe {
+    width: 350px;
   }
 }

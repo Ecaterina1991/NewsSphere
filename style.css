@@ -368,6 +368,23 @@ ul li:first-child {
   margin-top: 1em;
 }
 
+.video-live > a {
+  color: red;
+  background-color: yellow;
+  padding: 0.5em;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.video-live > a:hover {
+  color: #581919;
+}
+
+.live {
+  font-weight: 900;
+  color: rgb(156, 32, 32);
+}
+
 /* ?STILIZARE FOOTER */
 
 footer {

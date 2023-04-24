@@ -173,7 +173,6 @@ padding-bottom: 0.7em;
   color: orangered;
 }
 
-
 /* END MAin*/
 
 .header-wrapper {
@@ -245,6 +244,58 @@ padding-bottom: 0.7em;
   text-align: center;
 }
 
+/* ?STILIZARE FOTOGRAFII MARI GALERIE */
+
+
+ main {
+background-color: black;
+ }
+
+.wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.header-img {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: black;
+
+}
+
+.close-icon {
+  width: 30px;
+  position:;
+  top: 10em;
+  left: 30em;
+}
+
+
+/* .img-mare-wrapper {
+  background: url("1-img-mare.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: local;
+   position: relative;
+  margin-top: 6em;
+  margin-left: 12em;
+  width: 80%;    
+}*/
+
+/* .img-mare {
+  max-width: 800px;
+  object-fit: cover;
+  z-index: -1;
+} 
+
+.close-icon {
+  z-index: 1;
+  position: absolute;
+  top: 7em;
+  left: 97em
+}
+*/
 
 
 /* ?STILIZARE FOOTER */

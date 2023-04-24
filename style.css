@@ -385,6 +385,38 @@ ul li:first-child {
   color: rgb(156, 32, 32);
 }
 
+.cercetatori-wrapper {
+  flex-direction: column;
+  color: var(--logo-text-color);
+  font-size: var(--font-size-normal);
+  line-height: var(--line-height-normal);
+  padding: 0.5em;
+}
+
+.titlu-cercetatori {
+  color: yellow;
+  padding-top: 1em;
+  padding-bottom: 2em;
+  font-size: 1.6em;
+}
+
+.foto-text-wrapper {
+  padding: 1em;
+}
+
+.foto-text-wrapper > div > p {
+  padding: 1em 0;
+}
+.foto-text-wrapper > div > p > strong {
+  color: orange;
+}
+
+.yellow {
+  color: yellow !important;
+  font-size: larger;
+  font-weight: 900;
+}
+
 /* ?STILIZARE FOOTER */
 
 footer {

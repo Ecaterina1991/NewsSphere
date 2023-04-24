@@ -362,6 +362,12 @@ ul li:first-child {
   color: orangered;
 }
 
+.video-live {
+  font-size: 2em;
+  padding: 0.5em;
+  margin-top: 1em;
+}
+
 /* ?STILIZARE FOOTER */
 
 footer {

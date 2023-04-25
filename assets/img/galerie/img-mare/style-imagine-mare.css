@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ?STILIZARE FOTOGRAFII MARI GALERIE */
+
+body {
+  background-color: black;
+}
+
+.big-image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-image {
+  background: url(./1-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+
+.big-image2 {
+  background: url(./2-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+
+.big-image3 {
+  background: url(./3-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+.big-image4 {
+  background: url(./4-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+.big-image5 {
+  background: url(./5-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+.big-image6 {
+  background: url(./6-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+.big-image7 {
+  background: url(./7-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+.big-image8 {
+  background: url(./8-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+.big-image9 {
+  background: url(./9-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+.big-image10 {
+  background: url(./10-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+.big-image11 {
+  background: url(./11-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+.big-image12 {
+  background: url(./12-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 80vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+
+.foto-back-nav {
+  margin: 1em 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  font-weight: bold;
+  background-color: rgba(255, 166, 0, 0.568);
+  border: none;
+  border-radius: 30px;
+}
+.foto-back-nav:hover {
+  background-color: orange;
+}
+
+.foto-back-nav-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.foto-back-nav > a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  padding: 1em;
+}

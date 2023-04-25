@@ -24,7 +24,6 @@ body {
   background-color: black;
   display: grid;
   grid-template:
-    "top-text top-text" 1.5em
     "header header" 9em
     "slogan slogan" 12em
     "hero hero" 20em
@@ -487,7 +486,6 @@ footer {
 
   body {
     grid-template:
-      "top-text top-text" 1.5em
       "header header" 15em
       "slogan slogan" 12em
       "hero hero" 20em

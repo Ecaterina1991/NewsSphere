@@ -28,7 +28,6 @@ body {
   background-color: black;
   display: grid;
   grid-template:
-    "top-text top-text" 1.5em
     "header header" 9em
     "main aside" auto
     "footer footer" 12em
@@ -753,7 +752,6 @@ footer {
 
   body {
     grid-template:
-      "top-text top-text" 1.5em
       "header header" 15em
       "main main" auto
       "aside aside" auto

@@ -2,9 +2,7 @@
 
 /*! 
 
-+ sa schimb peste tot lang=ro
 
-sa adaug 3 matadate in head
 sa verific cu validator*/
 
 
@@ -30,7 +28,6 @@ body {
   background-color: black;
   display: grid;
   grid-template:
-    "top-text top-text top-text" 1.5em
     "header header header" 10em
     ". main ." auto
     "footer footer footer" 12em
@@ -324,7 +321,6 @@ margin-left: 3em;
 
   body {
     grid-template:
-      "top-text top-text" 1.5em
       "header header" 17em
       "main main" auto
       "footer footer" 15em

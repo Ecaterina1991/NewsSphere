@@ -395,12 +395,13 @@ ul li:first-child {
 .titlu-cercetatori {
   color: yellow;
   padding-top: 1em;
-  padding-bottom: 2em;
+  padding-bottom: 1em;
   font-size: 1.6em;
 }
 
 .foto-text-wrapper {
   padding: 1em;
+  padding-top: 3em;
 }
 
 .foto-text-wrapper > div > p {

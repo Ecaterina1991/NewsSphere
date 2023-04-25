@@ -1,9 +1,4 @@
-
-
-/*! 
-
-
-sa verific cu validator*/
+/*! sa verific cu validator*/
 
 
 :root {
@@ -36,6 +31,12 @@ body {
   grid-row-gap: 1.5em;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 .logo-text {
   color: lightblue;
   font-weight: 900;
@@ -48,11 +49,6 @@ body {
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-
-/* [href="../index.html"] {
-  color:lightblue;
-  text-decoration: none;
-} */
 
 a[href] {
   color: lightblue;
@@ -115,7 +111,7 @@ footer {
   background-color: black;
 }
 
-/*?MAIN */
+/*? STILIZARE MAIN */
 
 .video-nasa {
   padding: 2em;
@@ -143,7 +139,6 @@ padding: 1em 1em 0 3em;
 
 .img-galerie-stiri {
   object-fit: cover;
-  /* aspect-ratio: 1 / 1; */
   aspect-ratio: 12 / 9;
   width: 100%;
   padding: 5em 5em 5em 5em;
@@ -170,7 +165,7 @@ padding-bottom: 0.7em;
   color: orangered;
 }
 
-/* END MAin*/
+/*?STILIZARE HEADER*/
 
 .header-wrapper {
   display: flex;
@@ -233,14 +228,6 @@ padding-bottom: 0.7em;
   background-color: black;
 }
 
-/* ///////////////////////////////// */
-
-.row {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-
 
 /* ?STILIZARE FOOTER */
 
@@ -290,7 +277,7 @@ footer {
   animation-iteration-count: infinite;
 }
 
-/* ?Altele */
+/* ?Alte STILIZARI NECESARE */
 
 .ol-lansari {
 margin-left: 3em;
@@ -308,7 +295,7 @@ margin-left: 3em;
   }
 }
 
-/* ////////////////////////// */
+/*?MEDIA QUERIES */
 
 @media (max-width: 700px) {
  

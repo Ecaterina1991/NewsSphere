@@ -36,6 +36,12 @@ body {
   grid-row-gap: 1.5em;
 }
 
+.row {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
 a[href] {
   color: lightblue;
   text-decoration: none;
@@ -173,14 +179,6 @@ footer {
 
 .nav-button {
   background-color: black;
-}
-
-/* ///////////////////////////////// */
-
-.row {
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
 /* ?STILIZARE PRIVACY MAIN */

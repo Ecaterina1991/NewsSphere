@@ -39,10 +39,7 @@ a[href] {
   text-decoration: none;
 }
 
-/* [href="../index.html"] {
-  color: lightblue;
-  text-decoration: none;
-} */
+/* ?EDIT HEADER */
 
 .logo-text {
   color: lightblue;
@@ -186,7 +183,7 @@ footer {
   font-weight: 600;
   padding: 0.4em 0.8em;
   white-space: nowrap;
-  /* cu ajutorul acestei proprietati pastrez textul din link liniar */
+  /* cu ajutorul acestei proprietati white-space pastrez textul din link liniar */
 }
 
 .header-nav-bar > a:hover,
@@ -475,7 +472,7 @@ footer {
   }
 }
 
-/* ////////////////////////// */
+/* ?MEDIA QUERIES */
 
 @media (max-width: 700px) {
   .header-wrapper {

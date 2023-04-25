@@ -441,12 +441,18 @@ textarea:hover {
   font-size: 1.5em;
   padding-bottom: 1.5em;
 }
+
 .ultimele-stiri-wrapper > div {
   padding: 1em;
 }
+
 .ultimele-stiri-wrapper > div > h3 {
   padding-bottom: 0.7em;
   padding-top: 0.3em;
+}
+
+.ultimele-stiri-wrapper > div > * {
+  text-indent: 2em;
 }
 
 .data-ultimile-stiri {

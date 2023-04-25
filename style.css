@@ -1,3 +1,5 @@
+/* !verific cu validator. de jos in sus am ramas la privacy implicit */
+
 :root {
   --main-color-text: #312f2f;
   --blue-color: rgb(22, 22, 82);
@@ -14,7 +16,7 @@
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Poppins", sans-serif;
   max-width: 1200px;
   min-height: 100vh;
   margin: 0 auto 2em;

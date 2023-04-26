@@ -349,7 +349,7 @@ textarea:hover {
   background-color: var(--orangered-color);
   color: #fff;
   padding: 0.7em;
-  margin-bottom: 1em 0;
+  margin-bottom: 1em;
   border-radius: 5px;
   border: none;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.459);
@@ -767,7 +767,7 @@ footer {
   .galerie-grid {
     display: grid;
     gap: 0.25em;
-    grid-template-columns: repeat(autofit, minmax(7rem, 0.5fr));
+    grid-template-columns: 1fr;
   }
 
   .slogan::after {

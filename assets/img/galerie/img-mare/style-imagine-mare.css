@@ -139,6 +139,18 @@ body {
   border-radius: 10px;
 }
 .big-image11 {
+  background: url(./12-img-mare.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+  background-size: cover;
+  width: 80%;
+  height: 100vh;
+  margin-top: 1em;
+  border: 20px solid rgba(255, 166, 0, 0.479);
+  border-radius: 10px;
+}
+.big-image12 {
   background: url(./11-img-mare.jpg);
   background-repeat: no-repeat;
   background-position: center center;
@@ -150,29 +162,11 @@ body {
   border: 20px solid rgba(255, 166, 0, 0.479);
   border-radius: 10px;
 }
-.big-image12 {
-  background: url(./12-img-mare.jpg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-attachment: local;
-  background-size: cover;
-  width: 80%;
-  height: 80vh;
-  margin-top: 1em;
-  border: 20px solid rgba(255, 166, 0, 0.479);
-  border-radius: 10px;
+
+.foto-back-nav-wrapper > a {
+  text-decoration: none;
 }
 
-.foto-back-nav {
-  margin: 1em 0;
-  text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.4em;
-  font-weight: bold;
-  background-color: rgba(255, 166, 0, 0.568);
-  border: none;
-  border-radius: 30px;
-}
 .foto-back-nav:hover {
   background-color: orange;
 }
@@ -183,11 +177,19 @@ body {
   text-align: center;
 }
 
-.foto-back-nav > a {
+.foto-back-nav {
   display: flex;
   justify-content: center;
   text-align: center;
   text-decoration: none;
   color: black;
   padding: 1em;
+  margin: 1em 0;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4em;
+  font-weight: bold;
+  background-color: rgba(255, 166, 0, 0.568);
+  border: none;
+  border-radius: 30px;
 }

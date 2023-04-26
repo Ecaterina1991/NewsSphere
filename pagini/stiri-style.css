@@ -1,6 +1,5 @@
 /*! sa verific cu validator*/
 
-
 :root {
   --blue-color: rgb(22, 22, 82);
   --font-weight-title: 900;
@@ -99,12 +98,10 @@ header {
   padding-top: 0.3em;
 }
 
-
 main {
   grid-area: main;
   background-color: #d7d4e4;
 }
-
 
 footer {
   grid-area: footer;
@@ -123,18 +120,17 @@ footer {
 }
 
 .main-stiri-wrapper h2 {
-color: var(--blue-color);
-font-weight: 800;
-padding: 0.7em 2em 0 2em;
-font-size: 26px;
+  color: var(--blue-color);
+  font-weight: 800;
+  padding: 0.7em 2em 0 2em;
+  font-size: 26px;
 }
 
 .main-stiri-wrapper h3 {
-color: var(--blue-color);
-font-weight: 500;
-font-size: 20px;
-padding: 1em 1em 0 3em;
-
+  color: var(--blue-color);
+  font-weight: 500;
+  font-size: 20px;
+  padding: 1em 1em 0 3em;
 }
 
 .img-galerie-stiri {
@@ -151,8 +147,8 @@ padding: 1em 1em 0 3em;
 }
 
 .text-stiri p {
-text-indent: 1.25em;
-padding-bottom: 0.7em;
+  text-indent: 1.25em;
+  padding-bottom: 0.7em;
 }
 
 #link-foto {
@@ -228,7 +224,6 @@ padding-bottom: 0.7em;
   background-color: black;
 }
 
-
 /* ?STILIZARE FOOTER */
 
 footer {
@@ -255,7 +250,6 @@ footer {
 .link-footer a:hover {
   text-decoration: none;
   color: rgb(177, 177, 46);
-  color: 
   margin-left: 0.5em;
 }
 
@@ -280,7 +274,7 @@ footer {
 /* ?Alte STILIZARI NECESARE */
 
 .ol-lansari {
-margin-left: 3em;
+  margin-left: 3em;
 }
 
 @keyframes myFont3 {
@@ -298,8 +292,6 @@ margin-left: 3em;
 /*?MEDIA QUERIES */
 
 @media (max-width: 700px) {
- 
-
   .header-wrapper {
     justify-content: center;
     flex-direction: column;

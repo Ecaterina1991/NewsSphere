@@ -177,6 +177,7 @@ footer {
 }
 
 .header-nav-bar > a {
+  margin-left: calc((100% - 521px) / 5) + 10px;
   text-decoration: none;
   background-color: red;
   color: black;

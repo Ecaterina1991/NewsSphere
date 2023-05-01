@@ -133,6 +133,7 @@ footer {
 }
 
 .header-nav-bar > a {
+  margin-left: calc((100% - 521px) / 5) + 10px;
   text-decoration: none;
   background-color: red;
   color: black;
@@ -509,11 +510,16 @@ textarea:hover {
 .grid-container {
   display: grid;
   height: auto;
-  padding-left: 5.5em;
-  padding-top: 2em;
+  /* padding-left: 5.5em;
+  padding-top: 2em; */
   gap: 0.3em;
   grid-template-columns: repeat(3, minmax(15rem, 1fr));
   grid-auto-rows: 20rem;
+}
+
+.grid-item-main {
+  justify-self: center;
+  align-self: center;
 }
 
 .grid-item {
@@ -637,25 +643,6 @@ textarea:hover {
   height: 200px;
 }
 
-/* ?STILIZARE MEDIA QUERIES PENTRU GALERIA FOTO */
-
-@media (max-width: 1048px) {
-  .grid-container {
-    padding-left: 2.5em;
-
-    grid-template-columns: repeat(2, minmax(15rem, 1fr));
-    grid-auto-rows: 20rem;
-  }
-}
-@media (max-width: 504px) {
-  .grid-container {
-    /* padding-left: 11em; */
-    /* grid-template-columns: repeat(1, minmax(15em, 1fr)); */
-    grid-template-columns: 1fr;
-    grid-auto-rows: 20em;
-  }
-}
-
 /*?STILIZARE ASIDE */
 
 .evenimente-recente,
@@ -747,6 +734,20 @@ footer {
 
 /* ?MEDIA QUERIES EDIT */
 
+@media (max-width: 1048px) {
+  .grid-container {
+    padding-left: 2.5em;
+    grid-template-columns: repeat(2, minmax(15rem, 1fr));
+    grid-auto-rows: 20rem;
+  }
+}
+
+@media (max-width: 940px) {
+  .video-nasa > iframe {
+    width: 400px;
+  }
+}
+
 @media (max-width: 700px) {
   .header-wrapper {
     justify-content: center;
@@ -811,7 +812,12 @@ footer {
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 500px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: 20em;
+  }
+
   .header-wrapper {
     justify-content: center;
     flex-direction: column;

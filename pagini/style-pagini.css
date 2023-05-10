@@ -288,7 +288,6 @@ footer {
   width: 1.88em;
   height: 1.88em;
   position: relative;
-  top: 30%;
   transform: translateY(35%);
   margin-right: 10px;
 }
@@ -309,6 +308,14 @@ footer {
   font-size: var(--font-size-normal);
   color: var(--blue-color);
   font-weight: 600;
+}
+
+.form-contact label {
+  display: block;
+}
+
+.form-contact label.inline-b {
+  display: inline-block;
 }
 
 .form-grup {
@@ -411,7 +418,7 @@ textarea:hover {
 }
 
 .news-wrapper > h2 {
-  padding: 0 0 1em 0;
+  padding-bottom: 1em;
   color: var(--blue-color);
   font-weight: var(--font-weight-title);
 }
@@ -547,35 +554,29 @@ textarea:hover {
   }
 }
 
-.item1 {
-  background: url(../assets/img/galerie/galerie2/img1.jpg);
+/* de pus toate itemele */
+.item1,
+.item2,
+.item3,
+.item5 {
   background-repeat: no-repeat;
   background-position: center;
   width: 200px;
   height: 200px;
+}
+
+.item1 {
+  background: url(../assets/img/galerie/galerie2/img1.jpg);
 }
 
 .item2 {
   background: url(../assets/img/galerie/galerie2/img2.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 200px;
-  height: 200px;
 }
 .item3 {
   background: url(../assets/img/galerie/galerie2/img3.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 200px;
-  height: 200px;
 }
-
 .item5 {
   background: url(../assets/img/galerie/galerie2/img5.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 200px;
-  height: 200px;
 }
 .item6 {
   background: url(../assets/img/galerie/galerie2/img6.jpg);
@@ -649,12 +650,12 @@ textarea:hover {
 .descoperiri {
   color: lightgray;
   font-size: 1.2em;
-  padding: 3em 1em 1em 1em;
+  padding: 3em 1em 1em;
 }
 
 .aside-wrapper li {
   list-style-type: none;
-  padding: 1em 0 1em 0;
+  padding: 1em 0;
 }
 
 .aside-wrapper li:hover {
@@ -772,7 +773,6 @@ footer {
   }
 
   .slogan::after {
-    content: url(assets/img/racheta.png);
     display: none;
   }
 
@@ -781,7 +781,7 @@ footer {
   }
 
   .slogan,
-  .p-bunvenit {
+  .p-welcome {
     margin-right: 2.7em;
   }
 

@@ -1,3 +1,6 @@
+/* TODO: De mutat elementele comune intr-un alt fisier */
+/* TODO: De verificat si actualizat variabilele */
+
 :root {
   --main-color-text: #312f2f;
   --blue-color: rgb(22, 22, 82);
@@ -35,17 +38,18 @@ body {
 }
 
 a[href] {
-  color: lightblue;
+  color: var(--logo-text-color);
   text-decoration: none;
 }
 
 /* ?EDIT HEADER */
 
 .logo-text {
-  color: lightblue;
+  color: var(--logo-text-color);
   font-weight: 900;
   font-size: 1.75em;
   display: inline;
+  cursor: default;
 }
 
 .logo-text:hover {
@@ -72,7 +76,7 @@ a[href] {
 .news {
   display: inline-block;
   background-color: var(--blue-color);
-  color: lightblue;
+  color: var(--logo-text-color);
   border: 5px solid yellow;
   border-color: yellow red red yellow;
   padding: 0.4em;
@@ -272,7 +276,7 @@ footer {
   aspect-ratio: 1 / 1;
   /* aspect-ratio: 16 / 9; */
   width: 100%;
-  padding: 5em 5em 0em 5em;
+  padding: 5em 5em 0;
 }
 
 .content {
@@ -296,14 +300,14 @@ footer {
 
 /* ///////////////////////////////// */
 
-.p-bunvenit {
-  font-size: 1.4em;
+.p-welcome {
   padding: 2em;
 }
 
-.p-bunvenit p {
+.p-welcome p {
   text-indent: 1.25em;
   padding-bottom: 0.3em;
+  font-size: 1.4em;
 }
 
 .row {
@@ -312,13 +316,13 @@ footer {
   text-align: center;
 }
 
-.bunvenit-title {
+.welcome-title {
   color: var(--blue-color);
   font-weight: var(--font-weight-title);
   padding-top: 2em;
 }
 
-.bunvenit-title:hover {
+.welcome-title:hover {
   color: orangered;
   font-weight: var(--font-weight-title);
   padding-top: 2em;
@@ -500,7 +504,6 @@ footer {
   }
 
   .slogan::after {
-    content: url(assets/img/racheta.png);
     display: none;
   }
 
@@ -531,11 +534,6 @@ footer {
 }
 
 @media (max-width: 360px) {
-  .header-wrapper {
-    justify-content: center;
-    flex-direction: column;
-    height: 170px;
-  }
 
   body {
     grid-template:
@@ -547,10 +545,6 @@ footer {
       "footer footer" 10em
       / 1fr;
     grid-column-gap: 0.5em;
-  }
-
-  body {
-    margin-top: 1em;
   }
 
   .galerie-grid {
